@@ -22,7 +22,7 @@ export default function ModeToggle({ show, onToggle }) {
         className={`
           ${baseStyle}
           text-white 
-          rounded-full w-5 sm:w-8 h-5 sm:h-8
+          rounded-full w-5 sm:w-7 h-5 sm:h-7
           flex items-center justify-center
           hover:scale-[1.02] active:scale-[0.98]
           active:shadow-none dark:active:shadow-none
@@ -31,7 +31,7 @@ export default function ModeToggle({ show, onToggle }) {
       >
         <span className="text-xl font-bold">{show ? "−" : "+"}</span>
       </button>
-      <span className="text-[0.7rem] sm:text-base font-medium mt-1 text-gray-700 dark:text-gray-300">
+      <span className="text-[0.7rem] sm:text-xs font-medium mt-1 text-gray-700 dark:text-gray-300">
         MODE
       </span>
     </div>

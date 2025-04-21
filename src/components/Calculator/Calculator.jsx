@@ -26,10 +26,10 @@ const Calculator = ({ darkMode }) => {
   useKeyboardInput(handleClick, [handleClick]);
 
   return (
-    <div className="flex flex-col items-center justify-center  overflow-hidden px-4 flex-grow">
+    <div className="flex flex-col items-center justify-center  overflow-hidden px-4 py-10 flex-grow">
       <div
         className={`relative flex justify-center items-center transition-all duration-500 ease-in-out w-full px-4 ${
-          advancedMode ? "max-w-[768px]" : "max-w-[640px]"
+          advancedMode ? "max-w-[620px]" : "max-w-[480px]"
         }`}
       >
         <HistoryPanel
@@ -50,7 +50,7 @@ const Calculator = ({ darkMode }) => {
         <div
           className={`relative z-20 bg-[#49a0dc] dark:bg-[#1f4b79] p-5 sm:p-8 rounded-3xl border-b-4 sm:border-b-8 border-b-[#357aa0] dark:border-b-[#103e66] shadow-[0_10px_0_#357aa0,0_15px_35px_rgba(0,0,0,0.5)] dark:shadow-[0_10px_0_#103e66,0_15px_35px_rgba(0,0,0,0.6)] transition-all duration-500 transform origin-center ${
             showHistory ? "-translate-x-[10.625rem]" : "translate-x-0"
-          } ${advancedMode ? "w-full max-w-[700px]" : "w-full max-w-[600px]"}`}
+          } ${advancedMode ? "w-full max-w-[550px]" : "w-full max-w-[450px]"}`}
         >
           {/* only show history toggle when history exists */}
           {history.length > 0 && (
@@ -85,7 +85,7 @@ const Calculator = ({ darkMode }) => {
 
           {error && (
             <div className="absolute bottom-0 left-0 right-0 transform translate-y-full mt-4 text-center">
-              <div className="inline-block bg-red-100 text-red-700 px-4 py-2 rounded-lg font-semibold text-base sm:text-2xl shadow-lg border mt-10">
+              <div className="inline-block bg-red-100 text-red-700 px-4 py-2 rounded-lg font-semibold text-base sm:text-xl shadow-lg border mt-10">
                 {error}
               </div>
             </div>

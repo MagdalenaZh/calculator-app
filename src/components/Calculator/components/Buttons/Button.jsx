@@ -13,7 +13,7 @@ const Button = ({ label, onClick, variant = "num", className = "" }) => {
     mem: `
       bg-[#1f4b79] dark:bg-[#49a0dc]
       text-white
-      rounded-full w-14 h-6 sm:w-24 sm:h-12
+      rounded-full w-14 h-6 sm:w-16 sm:h-7
       shadow-[0_4px_0_#163c5e] sm:shadow-[0_6px_0_#163c5e] dark:shadow-[0_4px_0_#357aa0]  sm:dark:shadow-[0_6px_0_#357aa0] 
       hover:shadow-[0_4px_0_#163c5e] dark:hover:shadow-[0_5px_0_#357aa0]
       active:shadow-none dark:active:shadow-none
@@ -55,7 +55,7 @@ const Button = ({ label, onClick, variant = "num", className = "" }) => {
         cursor-pointer
         hover:scale-[1.02] active:scale-[0.98]
         font-medium
-        flex items-center justify-center text-base sm:text-3xl
+        flex items-center justify-center text-base sm:text-xl
         ${className}
       `}
     >

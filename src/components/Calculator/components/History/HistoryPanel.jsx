@@ -26,8 +26,8 @@ export default function HistoryPanel({
         }
       `}
     >
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-4xl font-bold text-gray-800 dark:text-white">
+      <div className="flex justify-between items-center mb-2">
+        <h2 className="text-3xl font-bold text-gray-800 dark:text-white">
           History
         </h2>
         <button
@@ -43,12 +43,12 @@ export default function HistoryPanel({
           onClear();
           onClose();
         }}
-        className="text-2xl text-red-400 hover:text-red-600 dark:text-red-300 mb-2"
+        className="text-xl text-red-400 hover:text-red-600 dark:text-red-300 "
       >
         Clear
       </button>
 
-      <ul className="space-y-2 mt-4 text-2xl text-gray-700 dark:text-gray-200 max-h-[37rem] overflow-y-auto">
+      <ul className="space-y-2 mt-4 text-xl text-gray-700 dark:text-gray-200 max-h-[30rem] overflow-y-auto">
         {history.map((entry, index) => (
           <li
             key={index}
