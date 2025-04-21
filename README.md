@@ -1,12 +1,21 @@
-# React + Vite
+## Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive calculator app built with React and JavaScript. It supports basic operations like addition, subtraction, multiplication, division, and square root. It also includes memory functions (M+, M-, MRC) and a mode toggle.
 
-Currently, two official plugins are available:
+When the **Mode** button is clicked, extra functions appear—allowing you to calculate `sin`, `cos`, `tan`, and `log`. After performing a calculation, a **History** button shows up. Clicking it opens a panel that displays all past calculations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+There's also a **Theme** switch to toggle between light and dark mode. The app handles input errors, formats numbers nicely, and evaluates expressions accurately.
 
-## Expanding the ESLint configuration
+## How to Run the Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+After cloning the repo, run:
+
+```
+npm install
+```
+
+Then start the app with:
+
+```
+npm run dev
+```
