@@ -9,7 +9,9 @@ export default function HistoryPanel({
   visible,
   advancedMode,
 }) {
-  const panelPosition = advancedMode ? "left-[36.25rem]" : "left-[28.75rem]]";
+  const panelPosition = advancedMode
+    ? "left-[calc(100%-14rem)]"
+    : "left-[calc(100%-13rem)]";
 
   return (
     <div

@@ -34,10 +34,8 @@ const Calculator = ({ darkMode }) => {
       />
 
       <div
-        className={`relative flex justify-center items-center transition-all duration-500 ease-in-out ${
-          advancedMode
-            ? "w-[43.75rem] sm:w-[48.75rem]"
-            : "w-[34.375rem] sm:w-[40.625rem]"
+        className={`relative flex justify-center items-center transition-all duration-500 ease-in-out w-full px-4 ${
+          advancedMode ? "max-w-[768px]" : "max-w-[640px]"
         }`}
       >
         <HistoryPanel
@@ -58,9 +56,7 @@ const Calculator = ({ darkMode }) => {
         <div
           className={`relative z-20 bg-[#49a0dc] dark:bg-[#1f4b79] p-5 sm:p-8 rounded-3xl border-b-4 sm:border-b-8 border-b-[#357aa0] dark:border-b-[#103e66] shadow-[0_10px_0_#357aa0,0_15px_35px_rgba(0,0,0,0.5)] dark:shadow-[0_10px_0_#103e66,0_15px_35px_rgba(0,0,0,0.6)] transition-all duration-500 transform origin-center ${
             showHistory ? "-translate-x-[10.625rem]" : "translate-x-0"
-          } ${
-            advancedMode ? "w-[22rem] sm:w-[48rem]" : "w-[22rem] sm:w-[42rem]"
-          }`}
+          } ${advancedMode ? "w-full max-w-[700px]" : "w-full max-w-[600px]"}`}
         >
           {/* only show history toggle when history exists */}
           {history.length > 0 && (
