@@ -48,7 +48,7 @@ export default function HistoryPanel({
         Clear
       </button>
 
-      <ul className="space-y-2 mt-4 text-2xl text-gray-700 dark:text-gray-200 max-h-[40.625rem] overflow-y-auto">
+      <ul className="space-y-2 mt-4 text-2xl text-gray-700 dark:text-gray-200 max-h-[37rem] overflow-y-auto">
         {history.map((entry, index) => (
           <li
             key={index}

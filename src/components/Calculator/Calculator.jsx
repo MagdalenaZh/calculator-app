@@ -26,13 +26,7 @@ const Calculator = ({ darkMode }) => {
   useKeyboardInput(handleClick, [handleClick]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-white dark:bg-gray-900 overflow-hidden px-4">
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-20 dark:opacity-10 transition-opacity duration-500"
-        style={{ backgroundImage: `url('/images/background.png')` }}
-        aria-hidden="true"
-      />
-
+    <div className="flex flex-col items-center justify-center  overflow-hidden px-4 flex-grow">
       <div
         className={`relative flex justify-center items-center transition-all duration-500 ease-in-out w-full px-4 ${
           advancedMode ? "max-w-[768px]" : "max-w-[640px]"

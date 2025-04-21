@@ -40,7 +40,7 @@ export default function ButtonPanel({ onButtonClick, advancedMode }) {
   ];
 
   return (
-    <div className="space-y-6 px-0 sm:px-6 pt-4 pb-2">
+    <div className="space-y-6 px-0 sm:px-2 pt-4 pb-2">
       {/* memory buttons row */}
       <div className="flex justify-between">
         {memButtons.map((m) => (
