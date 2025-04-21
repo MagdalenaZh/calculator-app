@@ -7,7 +7,7 @@ export default function Navigation({ darkMode, toggleDarkMode }) {
       <img
         src="/images/pros-logo.png"
         alt="Pros Logo"
-        className="h-10 sm:h-16 w-auto"
+        className="h-8 sm:h-12 w-auto"
       />
       <ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     </nav>
