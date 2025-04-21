@@ -1,4 +1,4 @@
-export const MAX_INPUT_LENGTH = 18;
+export const MAX_INPUT_LENGTH = 17;
 
 export const PATTERNS = {
   NUMERIC_OR_DECIMAL: /^[0-9.]$/,
